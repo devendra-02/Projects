@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="spotifyclone.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <title>Spotify - web Player: Music foe everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+
+        <div class="library">
+          <div class="option">
+            <div class="lib-option">
+              <img src="./spotifycloneassets/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="lib-icons">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="lib-icons">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">let's find some podcast to follow</p>
+              <p class="box-p2">we'll keep you updated on new</p>
+              <button class="badge">browse podcast</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="top-navbar">
+          <div class="nav-arrows">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="hide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="nav-buttons">
+            <button class="premium-btn hide">Explore Premium</button>
+            <button class="install-btn">
+              <i class="fa-regular fa-circle-down"></i> Install App
+            </button>
+            <button class="user-btn">
+              &nbsp;<i class="fa-regular fa-user">&nbsp;</i>
+            </button>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/recentlyplay1.jpg" />
+            <p class="cart-title">Karan Aujla</p>
+            <p class="card-info">
+              top punjabi songs by Karan , Honey , Diljit ....
+            </p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/recentlyplay2.jpg" />
+            <p class="cart-title">Bollywood central</p>
+            <p class="card-info">
+              the best Bollywood dance songs. #SpotifyWrapped cover
+            </p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/recentlyplay3.jpeg" />
+            <p class="cart-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks . . .
+            </p>
+          </div>
+        </div>
+
+        <h2>Trending songs</h2>
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/card2img.jpg" />
+            <p class="cart-title">Saffhire</p>
+            <p class="card-info">Calm, melodic tunes for relaxation.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/card3img.jpg" />
+            <p class="cart-title">Shaky</p>
+            <p class="card-info">Groovy beats with vibrant energy.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/card4img.jpg" />
+            <p class="cart-title">Muththa Mazhai</p>
+            <p class="card-info">Gentle rain-inspired Tamil melodies.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/card5img.jpg" />
+            <p class="cart-title">0008</p>
+            <p class="card-info">Bold, cinematic tracks with mystery.</p>
+          </div>
+
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/card6img.jpg" />
+            <p class="cart-title">Jugrafiya-from "Super30"</p>
+            <p class="card-info">
+              Emotional, romantic, soulful, soft, heartfelt
+            </p>
+          </div>
+        </div>
+
+        <h2>Popular artists</h2>
+        <div class="card-container">
+          <div class="card artists">
+            <img class="card-image" src="./spotifycloneassets/cardHoney.jpg" />
+            <p class="cart-title">Yo YO Honey Singh</p>
+            <p class="card-info">Artist</p>
+          </div>
+          <div class="card artists">
+            <img class="card-image" src="./spotifycloneassets/cardDiljit.jpg" />
+            <p class="cart-title">Diljit Dosanjh</p>
+            <p class="card-info">Artist</p>
+          </div>
+          <div class="card artists">
+            <img class="card-image" src="./spotifycloneassets/cardArijit.jpg" />
+            <p class="cart-title">Arijit Singh</p>
+            <p class="card-info">Artist</p>
+          </div>
+          <div class="card artists">
+            <img class="card-image" src="./spotifycloneassets/cardA.R.Rehaman.jpg" />
+            <p class="cart-title">A.R. Rehman</p>
+            <p class="card-info">Artist</p>
+          </div>
+          <div class="card artists">
+            <img class="card-image" src="./spotifycloneassets/cardPritam.jpg" />
+            <p class="cart-title">Pritam</p>
+            <p class="card-info">Artist</p>
+          </div>
+          <!-- <div class="card">
+            <img class="card-image" src="./assets/card6img.jpeg" />
+            <p class="cart-title"></p>
+            <p class="card-info">
+              
+            </p>
+          </div> -->
+        </div>
+        <h2>Popular radio</h2>
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/cardradioAujla.jpg" />
+            <p class="card-info">With Shubh, AP Dhillon, DIVINE and more</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/cardradioDiljit.jpg" />
+            <p class="card-info">
+              With Karan Aujla, Shubh, Sidhu Moose Wala and more
+            </p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/cardradioHoney.jpg" />
+            <p class="card-info">
+              With Badshah, Guru Randhawa, Harrdy Sandhu...
+            </p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/cardradioA.R. Rahaman.jpg" />
+            <p class="card-info">
+              With G. V. Prakash, Hariharan, Sid Sriram and more
+            </p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./spotifycloneassets/cardradioSidhu.jpg" />
+            <p class="card-info">With Shubh, Tegi Pannu, AP Dhillon and more</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="song">
+          <img src="./spotifycloneassets/song.jpg">
+
+          <div class="text">
+            <p><b>Wavy</b></p>
+            <p style="opacity: 0.5;">Karan Aujla</p>
+          </div>
+
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-display"></i>
+        </div>
+
+        <div class="control">
+          <div class="player-control">
+            <img src="./spotifycloneassets/player_icon1.png" />
+            <img src="./spotifycloneassets/player_icon2.png" />
+            <img
+              src="./spotifycloneassets/player_icon3.png"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./spotifycloneassets/player_icon4.png" />
+            <img src="./spotifycloneassets/player_icon5.png" />
+          </div>
+          <div class="progress-bar">
+            <span class="current-time">00:00</span>
+            <input class="progress" type="range" min="0" max="100" />
+            <span class="total-time">03:33</span>
+          </div>
+        </div>
+
+        <div class="option">
+          <i class="fa-solid fa-stop"></i>
+          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <i class="fa-solid fa-volume-low"></i>
+          <input type="range" class="volume-slider" min="0" max="100" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
