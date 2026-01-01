@@ -1,3 +1,5 @@
+
+// 1
 let gameseq = [];
 let userseq = [];
 
@@ -8,6 +10,8 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
+// 2
+
 document.addEventListener("keypress", function () {
   if (started === false) {
     console.log("Game is started");
@@ -17,6 +21,8 @@ document.addEventListener("keypress", function () {
   }
 });
 
+//  lifgt flash 
+
 function btnflash(btn) {
   btn.classList.add("btnflash"); // in css me jake dekh
   setTimeout(function () {
@@ -24,12 +30,16 @@ function btnflash(btn) {
   },500);
 }
 
+// lifgt flash
+
 function userflash(btn) {
   btn.classList.add("userflash"); // css me jake dekh
   setTimeout(function () {
     btn.classList.remove("userflash");
   }, 500);
 }
+
+// 3
 
 function levelup() {
   userseq = [];
@@ -45,6 +55,8 @@ function levelup() {
   btnflash(randbtn);
 } 
 
+// 5
+
 function checkans(index) {
   if (userseq[index] === gameseq[index]) {
     if (userseq.length == gameseq.length) {
@@ -56,6 +68,8 @@ function checkans(index) {
   }
 }
 
+// 4
+
 function btnpress() {
   let btn = this;
   userflash(btn);
@@ -66,10 +80,14 @@ function btnpress() {
   checkans(userseq.length-1);
 }
 
-let btnall = document.querySelectorAll(".btn");
+//  pata lagta hai ki user ne kaunsa color dabaya
+
+let btnall = document.querySelectorAll(".btn");  //Sabhi buttons ko clickable banana ,
 for (btn of btnall) {
-  btn.addEventListener("click", btnpress);
+  btn.addEventListener("click", btnpress);  // Har button click par btnpress() function call karna 
 }
+
+// agr glt enter kiya to reset the game 
 
 function reset() {
   started = false;
